@@ -5,25 +5,19 @@ ESLint configuration for React projects with TypeScript support. Extends `@alexf
 ## Configuration
 
 **1. Create `.env` file in project root:**
-```
+
+```bash
 GITHUB_TOKEN=your_github_token
 ```
 
 **2. Add to `.npmrc`:**
-```
+
+```bash
 @alexfuji:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
 > **Note**: In GitHub Actions, `NODE_AUTH_TOKEN` is automatically set from `GITHUB_TOKEN` secret.
-GITHUB_TOKEN=your_github_token
-```
-
-**2. Add to `.npmrc`:**
-```
-@alexfuji:registry=https://npm.pkg.github.com/
-//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-```
 
 ### Generating a GitHub Token
 

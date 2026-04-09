@@ -4,8 +4,13 @@
   "description": "ESLint configuration for React projects with TypeScript support",
   "type": "module",
   "main": "eslint.config.js",
-  "scripts": {
-    "install:auth": "env-cmd -f .env npm install"
+"scripts": {
+    "install:auth": "env-cmd -f .env npm install",
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0",
+    "standard-version": "^9.3.2"
   },
   "repository": {
     "type": "git",
