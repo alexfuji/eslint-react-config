@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/alexfuji/eslint-react-config/compare/v1.1.0...v1.2.0) (2026-04-09)
+
+
+### Features
+
+* replace standard-version with googleapis/release-please ([221da62](https://github.com/alexfuji/eslint-react-config/commit/221da626f44f080c3756471e9f7247671fcad4ac))
+
 ## 1.1.0 (2026-04-09)
 
 
