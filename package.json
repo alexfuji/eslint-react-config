@@ -5,8 +5,7 @@
   "type": "module",
   "main": "eslint.config.js",
   "scripts": {
-    "install:auth": "env-cmd -f .env npm install",
-    "release": "npx standard-version"
+    "install:auth": "env-cmd -f .env npm install"
   },
   "repository": {
     "type": "git",
@@ -31,8 +30,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
-    "standard-version": "^9.3.2"
+    "env-cmd": "^10.1.0"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",
