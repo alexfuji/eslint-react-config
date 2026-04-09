@@ -1,6 +1,6 @@
 {
   "name": "@alexfuji/eslint-react-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ESLint configuration for React projects with TypeScript support",
   "type": "module",
   "main": "eslint.config.js",
