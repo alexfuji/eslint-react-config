@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.1](https://github.com/alexfuji/eslint-react-config/compare/v1.2.0...v1.2.1) (2026-04-09)
+
+
+### Bug Fixes
+
+* use GITHUB_TOKEN instead of NODE_AUTH_TOKEN for npm install ([25c66fe](https://github.com/alexfuji/eslint-react-config/commit/25c66fe5aaddb8d3784d00459561e4a1feadf16d))
+
 ## [1.2.0](https://github.com/alexfuji/eslint-react-config/compare/v1.1.0...v1.2.0) (2026-04-09)
 
 
