@@ -15,6 +15,16 @@ GITHUB_TOKEN=your_github_token
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
+> **Note**: In GitHub Actions, `NODE_AUTH_TOKEN` is automatically set from `GITHUB_TOKEN` secret.
+GITHUB_TOKEN=your_github_token
+```
+
+**2. Add to `.npmrc`:**
+```
+@alexfuji:registry=https://npm.pkg.github.com/
+//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
+```
+
 ### Generating a GitHub Token
 
 1. Go to: https://github.com/settings/tokens
