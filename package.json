@@ -6,7 +6,7 @@
   "main": "eslint.config.js",
 "scripts": {
     "install:auth": "env-cmd -f .env npm install",
-    "release": "standard-version"
+    "release": "npx standard-version"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
