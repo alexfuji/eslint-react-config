@@ -38,5 +38,16 @@
     "eslint": "^9.0.0",
     "react": "^16.0.0",
     "typescript-eslint": "^8.0.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    },
+    "typescript-eslint": {
+      "optional": true
+    }
   }
 }
