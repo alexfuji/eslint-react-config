@@ -4,20 +4,16 @@
   "description": "ESLint configuration for React projects with TypeScript support",
   "type": "module",
   "main": "eslint.config.js",
-"scripts": {
+  "scripts": {
     "install:auth": "env-cmd -f .env npm install",
     "release": "npx standard-version"
-  },
-  "devDependencies": {
-    "env-cmd": "^10.1.0",
-    "standard-version": "^9.3.2"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alexfuji/eslint-react-config.git"
   },
   "keywords": ["eslint", "config", "react", "typescript"],
-  "author": "Alex Fujimura",
+  "author": "Alex Fuji",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/alexfuji/eslint-react-config/issues"
@@ -30,7 +26,8 @@
     "eslint-plugin-jsx-a11y": "^6.10.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0"
+    "env-cmd": "^10.1.0",
+    "standard-version": "^9.3.2"
   },
   "peerDependencies": {
     "eslint": "^9.0.0",

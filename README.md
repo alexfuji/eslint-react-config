@@ -2,16 +2,37 @@
 
 ESLint configuration for React projects with TypeScript support. Extends `@alexfuji/eslint-base-config`.
 
-## Configuration
+## Setup & Installation
 
-**1. Create `.env` file in project root:**
+> **Note**: This package is published to GitHub Packages. Authentication required.
 
+### First Time Setup (Fresh Checkout)
+
+Since the project needs dependencies from GitHub Packages, you need authentication to install:
+
+**Option 1: Using env-cmd**
+```bash
+# Install env-cmd globally (required for the install script)
+npm install -g env-cmd
+
+# Run the install script
+npm run install:auth
+```
+
+**Option 2: Direct environment variable**
+```bash
+# Set the token and install in one command
+GITHUB_TOKEN=your_github_token npm install
+```
+
+### Configuration
+
+Create `.env` file in project root:
 ```bash
 GITHUB_TOKEN=your_github_token
 ```
 
-**2. Add to `.npmrc`:**
-
+Add to `.npmrc`:
 ```bash
 @alexfuji:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
@@ -27,33 +48,17 @@ GITHUB_TOKEN=your_github_token
 4. Select the following **scope**:
    - `read:packages` - Read packages from GitHub Packages
 5. Click **Generate token**
-6. Copy the token and use it in the command above
+6. Copy the token and use it in the commands above
 
 For CI/CD, add `GITHUB_TOKEN` as a secret environment variable in your CI platform.
 
-## Installation
+## Usage
 
-> **Note**: This package is published to GitHub Packages. Authentication required (see below).
-
-```bash
-npm run install:auth
-```
-
-Or if using pnpm:
-
-```bash
-pnpm add @alexfuji/eslint-react-config
-```
-
-## Peer Dependencies
-
-You'll need to install these packages or a higher version of this packages:
+You'll need to install these peer dependencies:
 
 ```bash
 npm install eslint@^9.0.0 react@^16.0.0 typescript-eslint
 ```
-
-## Usage
 
 In your project's `eslint.config.js`:
 
