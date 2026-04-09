@@ -1,6 +1,6 @@
 {
   "name": "@alexfuji/eslint-react-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "ESLint configuration for React projects with TypeScript support",
   "type": "module",
   "main": "eslint.config.js",
@@ -12,7 +12,12 @@
     "type": "git",
     "url": "git+https://github.com/alexfuji/eslint-react-config.git"
   },
-  "keywords": ["eslint", "config", "react", "typescript"],
+  "keywords": [
+    "eslint",
+    "config",
+    "react",
+    "typescript"
+  ],
   "author": "Alex Fuji",
   "license": "MIT",
   "bugs": {
