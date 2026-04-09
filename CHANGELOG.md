@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.2](https://github.com/alexfuji/eslint-react-config/compare/v1.2.1...v1.2.2) (2026-04-09)
+
+
+### Bug Fixes
+
+* create .npmrc in workflow for GitHub Packages auth ([53fb780](https://github.com/alexfuji/eslint-react-config/commit/53fb7801681cf8e7bdb633eb243620cc42a50e9d))
+
 ## [1.2.1](https://github.com/alexfuji/eslint-react-config/compare/v1.2.0...v1.2.1) (2026-04-09)
 
 
