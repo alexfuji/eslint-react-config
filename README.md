@@ -6,33 +6,16 @@ ESLint configuration for React projects with TypeScript support. Extends `@alexf
 
 > **Note**: This package is published to GitHub Packages. Authentication required.
 
-### First Time Setup (Fresh Checkout)
-
-Since the project needs dependencies from GitHub Packages, you need authentication to install:
-
-**Option 1: Using env-cmd**
-```bash
-# Install env-cmd globally (required for the install script)
-npm install -g env-cmd
-
-# Run the install script
-npm run install:auth
-```
-
-**Option 2: Direct environment variable**
-```bash
-# Set the token and install in one command
-GITHUB_TOKEN=your_github_token npm install
-```
-
 ### Configuration
 
 Create `.env` file in project root:
+
 ```bash
 GITHUB_TOKEN=your_github_token
 ```
 
 Add to `.npmrc`:
+
 ```bash
 @alexfuji:registry=https://npm.pkg.github.com/
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
@@ -48,9 +31,40 @@ Add to `.npmrc`:
 4. Select the following **scope**:
    - `read:packages` - Read packages from GitHub Packages
 5. Click **Generate token**
-6. Copy the token and use it in the commands above
+6. Copy the token and use it in the following commands
 
 For CI/CD, add `GITHUB_TOKEN` as a secret environment variable in your CI platform.
+
+### First Time Setup (Fresh Checkout)
+
+Since the project needs dependencies from GitHub Packages, you need authentication to install:
+
+**Option 1: Using env-cmd**
+
+```bash
+# Install env-cmd globally (required for the install script)
+npm install -g env-cmd
+```
+
+Add the following script to the scripts in your `package.json`
+
+```json
+  "scripts": {
+    "install:auth": "env-cmd -f .env npm install"
+  },
+```
+
+```bash
+# Run the install script
+npm run install:auth
+```
+
+**Option 2: Direct environment variable**
+
+```bash
+# Set the token and install in one command
+GITHUB_TOKEN=your_github_token npm install
+```
 
 ## Usage
 
