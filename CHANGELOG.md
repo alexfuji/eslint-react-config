@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.3](https://github.com/alexfuji/eslint-react-config/compare/v1.2.2...v1.2.3) (2026-05-10)
+
+
+### Bug Fixes
+
+* widen react peer dependency to support React 16-19 ([4ee73b0](https://github.com/alexfuji/eslint-react-config/commit/4ee73b01741fe42ae81982d20b59f53b3570f557))
+
 ## [1.2.2](https://github.com/alexfuji/eslint-react-config/compare/v1.2.1...v1.2.2) (2026-04-09)
 
 
